@@ -8,12 +8,27 @@ interface Animal {
     run(): void;
 }
 class Human implements Animal {
+    get noOfLegs(): number {
+        return this._noOfLegs;
+    }
 
-    private noOfLegs: number;
-    private noOfHands: number;
+    set noOfLegs(value: number) {
+        this._noOfLegs = value;
+    }
+
+    get noOfHands(): number {
+        return this._noOfHands;
+    }
+
+    set noOfHands(value: number) {
+        this._noOfHands = value;
+    }
+
+    private _noOfLegs: number;
+    private _noOfHands: number;
     constructor(noOfLegs: number, noOfHands: number) {
-        this.noOfLegs = noOfLegs;
-        this.noOfHands = noOfHands;
+        this._noOfLegs = noOfLegs;
+        this._noOfHands = noOfHands;
     }
     run() {
         console.log("Human is running");
