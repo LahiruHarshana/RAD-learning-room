@@ -8,7 +8,6 @@ interface Animal {
     run(): void;
 }
 
-
 class Human implements Animal {
     run() {
         console.log("Human is running");
