@@ -34,6 +34,10 @@ class Human implements Animal {
         console.log("Human is running");
     }
 }
+
+class Employee extends Human {
+
+}
 class Dog implements Animal {
     run() {
         console.log("Dog is running");
