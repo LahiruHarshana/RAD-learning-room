@@ -8,6 +8,9 @@ interface Animal {
     run(): void;
 }
 class Human implements Animal {
+
+    private noOfLegs: number;
+    private noOfHands: number;
     run() {
         console.log("Human is running");
     }
