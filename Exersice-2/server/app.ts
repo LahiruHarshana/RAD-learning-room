@@ -11,6 +11,10 @@ class Human implements Animal {
 
     private noOfLegs: number;
     private noOfHands: number;
+    constructor(noOfLegs: number, noOfHands: number) {
+        this.noOfLegs = noOfLegs;
+        this.noOfHands = noOfHands;
+    }
     run() {
         console.log("Human is running");
     }
