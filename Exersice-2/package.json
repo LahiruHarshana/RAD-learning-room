@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "tsc server/app.ts && node app.js"
+    "start": "tsc && node dist/app.js"
   },
   "author": "",
   "license": "ISC",
