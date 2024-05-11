@@ -43,3 +43,7 @@ class Dog implements Animal {
         console.log("Dog is running");
     }
 }
+
+let human = new Human(2, 2);
+console.log(human.noOfLegs);
+human.run();
