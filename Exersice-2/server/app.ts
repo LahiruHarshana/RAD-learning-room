@@ -34,7 +34,6 @@ class Human implements Animal {
         console.log("Human is running");
     }
 }
-
 class Employee extends Human {
 
 }
