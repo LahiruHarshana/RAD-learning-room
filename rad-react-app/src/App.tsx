@@ -6,7 +6,7 @@ import {NavBar} from './view/navBar/NavBar';
 function App() {
   return (
       <>
-      <NavBar/>
+        <NavBar/>
         <Home />
       </>
   );
