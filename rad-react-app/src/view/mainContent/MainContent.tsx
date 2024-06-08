@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import img1 from './images/Sensual-Massage-in-Lahore.jpg';
 import img2 from './images/massage-center.jpg';
-import img3 from './images/Massage-Therapy-min-min.png';
+import img3 from './images/11031624_002_b9db.jpg';
+import { Link } from 'react-router-dom';
 
 export default class MainContent extends Component {
   render() {
@@ -12,7 +13,11 @@ export default class MainContent extends Component {
           <div className="max-w-4xl text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Welcome to Spa Massage Center</h1>
             <p className="text-lg text-gray-800 mb-8">Experience tranquility and relaxation with our professional massage services.</p>
-            <button className="px-8 py-3 bg-amber-500 text-white font-semibold rounded hover:bg-amber-600 transition duration-300">Book Now</button>
+            <Link to="/booking">
+              <button className="px-8 py-3 bg-amber-500 text-white font-semibold rounded hover:bg-amber-600 transition duration-300">
+                Book Now
+              </button>
+            </Link>
           </div>
         </section>
 
